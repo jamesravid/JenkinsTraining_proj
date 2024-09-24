@@ -1,0 +1,47 @@
+james@James MINGW64 /d/git/Projects/JenkinsTraining_proj
+$ echo "# JenkinsTraining_proj" >> README.md
+
+james@James MINGW64 /d/git/Projects/JenkinsTraining_proj
+$ git init
+Initialized empty Git repository in D:/git/Projects/JenkinsTraining_proj/.git/
+
+james@James MINGW64 /d/git/Projects/JenkinsTraining_proj (master)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+james@James MINGW64 /d/git/Projects/JenkinsTraining_proj (master)
+$ git commit -m "commit #1"
+[master (root-commit) 710d97c] commit #1
+ 2 files changed, 1 insertion(+)
+ create mode 100644 README.md
+ create mode 100644 commands.txt
+
+james@James MINGW64 /d/git/Projects/JenkinsTraining_proj (master)
+$ ls
+README.md  commands.txt
+
+james@James MINGW64 /d/git/Projects/JenkinsTraining_proj (master)
+$ git branch -M main
+
+james@James MINGW64 /d/git/Projects/JenkinsTraining_proj (main)
+$ git remote add origin https://github.com/jamesravid/JenkinsTraining_proj.git
+
+james@James MINGW64 /d/git/Projects/JenkinsTraining_proj (main)
+$ git push -u orgin main
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+james@James MINGW64 /d/git/Projects/JenkinsTraining_proj (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 277 bytes | 277.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/jamesravid/JenkinsTraining_proj.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
