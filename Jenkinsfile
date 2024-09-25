@@ -3,9 +3,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Check Node.js Version') {
+        stage('Test') {
             steps {
-                bat 'node -v' // Outputs the version of Node.js
+                bat 'echo Hello, World!'
             }
         }
     }
